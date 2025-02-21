@@ -6,7 +6,10 @@ comment]]
 
 vim.cmd("colorscheme vim")
 foo = function() 
-	print("testing colors") end
+	print("testing colors") 
+end
+
+-- lua dictionary:
 local options={
 termguicolors = true, -- set term gui colors
 }
