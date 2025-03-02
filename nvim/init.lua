@@ -14,6 +14,16 @@ autocmd FileType * setlocal formatoptions -=r
 augroup END
 ]]
 
+vim.api.nvim_create_user_command('S', 'write', {force = true})
+--[[ function _cmd.saveFile()
+  vim.cmd('write')
+  print('File saved')
+end
+
+vim.api.nvim_create_user_command('Ss', function()
+  _cmd.saveFile()
+end, {})
+]]
 
 foo = function() 
 	print("testing colors") end
