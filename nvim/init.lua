@@ -13,8 +13,11 @@ autocmd FileType * setlocal formatoptions -=c
 autocmd FileType * setlocal formatoptions -=r
 augroup END
 ]]
+
+
 foo = function() 
 	print("testing colors") end
 
-
+-- commands
+-- :checkhealth
 
