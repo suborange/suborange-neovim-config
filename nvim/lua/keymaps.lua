@@ -16,7 +16,10 @@ key.set(n, 'i','k', ops)
 key.set(n, 'j','h', ops)
 -- 
 key.set(n, '<Esc>', '<S-space>', ops)
-
+-- windows
+key.set(n, '<C-i>', '<C-w>k', ops)
+key.set(n, '<C-k>', '<C-w>j', ops)
+key.set(n, '<C-j>', '<C-w>h', ops)
 -- scrolling	
 key.set(n, '<S-l>','<C-f>', ops) -- should scroll forward one page - so like 30 lines
 key.set(n, '<S-j>','<C-b>', ops) -- should scroll backwards one page - so like 30 lines
