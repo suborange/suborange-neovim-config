@@ -15,11 +15,13 @@ key.set(n, 'k','j', ops)
 key.set(n, 'i','k', ops)
 key.set(n, 'j','h', ops)
 -- 
-key.set(n, '<Esc>', '<S-space>', ops)
+--key.set(n, '<Esc>', '<S-space>', ops)
 -- windows
 key.set(n, '<C-i>', '<C-w>k', ops)
 key.set(n, '<C-k>', '<C-w>j', ops)
 key.set(n, '<C-j>', '<C-w>h', ops)
+key.set(n, '<M-i>', ':m .-2<CR>==', ops) -- up one line
+key.set(n, '<M-k>', ':m .+1<CR>==', ops) -- down one line
 -- scrolling	
 key.set(n, '<S-l>','<C-f>', ops) -- should scroll forward one page - so like 30 lines
 key.set(n, '<S-j>','<C-b>', ops) -- should scroll backwards one page - so like 30 lines
@@ -30,6 +32,9 @@ key.set(n,'c','r', ops)
 key.set(n,'C','ce', ops) 
 key.set(n,'T','c0', ops) 
 key.set(n,'t','c$', ops) 
+key.set(n,'X','x<ESC>i', ops) 
+key.set(v,'X','x<ESC>i', ops) 
+key.set(vb,'X','x<ESC>i', ops) 
 --key.set(n,'cx','rx', ops) 
 --key.set(v, '<S-space>', '<Esc>', ops)
 
@@ -56,7 +61,7 @@ key.set(n, 'dr', 'd$', ops) -- r is move to end of line
 key.set(n, 'U', '<C-r>', ops) -- U is for redo 
 
 -- search
-key.set(n, ';','%')
+key.set(n, "'",'%')
 -- INSERT MODE 
 key.set(i, '<S-space>', '<Esc>', ops)
 key.set(i, '<S-space>', '<Esc>', ops)
@@ -65,6 +70,9 @@ key.set(i, '<S-space>', '<Esc>', ops)
 key.set(v, 'k','j', ops)
 key.set(v, 'i','k', ops)
 key.set(v, 'j','h', ops)
+key.set(v, '<C-i>', '<C-w>k', ops)
+key.set(v, '<C-k>', '<C-w>j', ops)
+key.set(v, '<C-j>', '<C-w>h', ops)
 key.set(v, '<S-space>', '<Esc>', ops)
 key.set(vb, '<S-space>', '<Esc>', ops)
 key.set(v, '<S-l>','<C-f>', ops) -- should scroll forward one page - so like 30 lines

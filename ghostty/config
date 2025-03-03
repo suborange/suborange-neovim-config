@@ -36,18 +36,22 @@ keybind = ctrl+w=new_split:up
 keybind = ctrl+s=new_split:down
 keybind = ctrl+a=new_split:left
 keybind = ctrl+d=new_split:right
-keybind = ctrl+i=goto_split:up
-keybind = ctrl+k=goto_split:down
-keybind = ctrl+j=goto_split:left
-keybind = ctrl+l=goto_split:right
-keybind = ctrl+shift+w=resize_split:up,15
-keybind = ctrl+shift+s=resize_split:down,15
-keybind = ctrl+shift+a=resize_split:left,15
-keybind = ctrl+shift+d=resize_split:right,15
+keybind = ctrl+shift+i=goto_split:up
+keybind = ctrl+shift+k=goto_split:down
+keybind = ctrl+shift+j=goto_split:left
+keybind = ctrl+shift+l=goto_split:right
+keybind = ctrl+shift+w=resize_split:up,22
+keybind = ctrl+shift+s=resize_split:down,22
+keybind = ctrl+shift+a=resize_split:left,22
+keybind = ctrl+shift+d=resize_split:right,22
 #keybind = ctrl+equal=increase_font_size
 #keybind = ctrl+minus=decrease_font_size
 keybind = ctrl+q=close_surface
-keybind = ctrl+space=equalize_splits
+keybind = ctrl+alt+space=equalize_splits
+font-feature = "calt=0"
+font-feature = "liga=0"
+font-feature = "dliga=0"
+
 #
 # # Any line beginning with a # is a comment. It's not possible to put
 # # a comment after a config option, since it would be interpreted as a
