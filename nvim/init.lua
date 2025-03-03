@@ -1,11 +1,12 @@
 -- init.lua requirements
 -- 
-require 'options'
-require 'keymaps'
-require 'plugins'
-
+require('options')
+require('keymaps')
+require('plugins')
+--require('config.lazy')
 vim.cmd("colorscheme koehler")
-
+vim.g.mapleader = " "
+vim.g.maplocalleader = " " 
 vim.cmd[[
 augroup FormatOptions
 autocmd!
