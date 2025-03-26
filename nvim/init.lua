@@ -3,6 +3,7 @@
 require('options')
 require('keymaps')
 require('plugins')
+require('user_commands')
 --require('config.lazy')
 vim.cmd("colorscheme koehler")
 vim.g.mapleader = " "

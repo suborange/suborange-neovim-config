@@ -49,8 +49,10 @@ key.set(n, 'S','A', ops) -- S is right of line
 key.set(n, 'p','P', ops) -- paste before cursor
 key.set(n,'P', 'p', ops) -- paste after cursor
 -- moving words
+-- add the kebindgs for comments
+
 key.set(n,'w', 'b', ops) -- move back one word, first char
--- key.set(n,'W', '') -- move back one word, end char
+key.set(n,'W', 'ge', ops) -- move back one word, end char
 key.set(n,'e', 'w', ops) -- move forward one word, first char
 key.set(n,'E', 'e', ops) -- move forward one word, end char
 key.set(n, 'q', '^', ops) -- q is move to first char of line
@@ -59,13 +61,12 @@ key.set(n, 'dq', 'd0', ops) -- Q is move to beg of line
 key.set(n, 'r', '$', ops) -- r is move to end of line
 key.set(n, 'dr', 'd$', ops) -- r is move to end of line
 key.set(n, 'U', '<C-r>', ops) -- U is for redo 
-
+-- add <Enter> as o for new line, normal mode
 -- search
-key.set(n, "'",'%')
+key.set(n, "'",'%',ops)
 -- INSERT MODE 
 key.set(i, '<S-space>', '<Esc>', ops)
 key.set(i, '<S-space>', '<Esc>', ops)
-
 -- VISUAL MODES
 key.set(v, 'k','j', ops)
 key.set(v, 'i','k', ops)
