@@ -24,7 +24,7 @@
 #
 # # Spacing around the equals sign does not matter.
 # # All of these are identical:
-background = 222222
+background = 171717 
 foreground = 77ff11
 # cursor-style = underline
 selection-invert-fg-bg = true
@@ -32,18 +32,25 @@ cursor-color = ff2222
 unfocused-split-opacity = 0.30
 split-divider-color = ffb300
 # KEYBINDS
-keybind = ctrl+w=new_split:up
-keybind = ctrl+s=new_split:down
-keybind = ctrl+a=new_split:left
-keybind = ctrl+d=new_split:right
+# window
+keybind = ctrl+shift+w=new_split:up
+keybind = ctrl+shift+s=new_split:down
+keybind = ctrl+shift+a=new_split:left
+keybind = ctrl+shift+d=new_split:right
+keybind = ctrl+w=resize_split:up,22
+keybind = ctrl+s=resize_split:down,22
+keybind = ctrl+a=resize_split:left,22
+keybind = ctrl+d=resize_split:right,22
+keybind = ctrl+i=scroll_page_up
+keybind = ctrl+k=scroll_page_down
+#keybind = ctrl+j=scroll_line_up
+#keybind = ctrl+l=scroll_line_down
+# movement
 keybind = ctrl+shift+i=goto_split:up
 keybind = ctrl+shift+k=goto_split:down
 keybind = ctrl+shift+j=goto_split:left
 keybind = ctrl+shift+l=goto_split:right
-keybind = ctrl+shift+w=resize_split:up,22
-keybind = ctrl+shift+s=resize_split:down,22
-keybind = ctrl+shift+a=resize_split:left,22
-keybind = ctrl+shift+d=resize_split:right,22
+
 #keybind = ctrl+equal=increase_font_size
 #keybind = ctrl+minus=decrease_font_size
 keybind = ctrl+q=close_surface
