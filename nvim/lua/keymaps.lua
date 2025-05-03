@@ -6,7 +6,19 @@ local vb = 'x';
 local t = 't';
 local c = 'c';
 local r = 'r';
-local ops = {noremap = true, silent = true}
+local ops = {buffer = true, noremap = true, silent = true}
+
+-- should work for :Explore
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'netrw',
+  callback = function()
+key.set(n, 'k','j', ops)
+key.set(n, 'i','k', ops)
+key.set(n, 'j','h', ops)
+end,
+})
+
+
 
 -- NORMAL MODE
 -- .set('mode', 'new-key', 'function key')
